@@ -1,0 +1,155 @@
+@font-face{
+    src: url("../fonts/NordicaThin.otf");
+    font-family: "Nordica";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #d6f4f1;
+}
+
+.container{
+    max-width: 1200px;
+    height: 160px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: 
+        "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+}
+.logo {
+    grid-area: lgo;
+}
+.logo img{
+    width: 300px;
+   
+}
+.nav-bar{
+    font-size: 18px;
+    grid-area: nav; 
+    display: grid;
+    align-content: center;
+   
+}
+.nav-bar a{
+    font-family: "Nordica";
+    font-size: 1em;
+    color: #53bdbf;
+    text-transform: uppercase;
+}
+.nav-bar ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+main{
+    font-size: 20px;
+}
+ main section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "Nordica";
+    font-size: 2em;
+    color: #d6f4f1;
+}
+main section:nth-child(odd){
+    height: 150vh;
+    background-color: #53bdbf;
+
+
+}
+main section:nth-child(even){
+    height: 150vh;
+    background-color: #53bdbf;
+}
+
+.footer-distributed{
+	background-color: #53bdbf;
+	box-shadow: 0 1px 1px 0 #53bdbf);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #53bdbf;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #d6f4f1;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  #53bdbf;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #53bdbf;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #d6f4f1;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
