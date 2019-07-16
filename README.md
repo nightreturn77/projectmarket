@@ -30,4 +30,4 @@ sucesso.
 ## Troubleshooting
 ## Changelog
 ## Licence
-Licence: None
+Licence: Apache License 2.0
