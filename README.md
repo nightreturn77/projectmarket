@@ -1,4 +1,11 @@
 # Freyr
+O Freyr como foi chamado, é um sistema voltado para o comércio, e com
+especialidades em eletrodomésticos, informática e para o lar(sofás, camas, armários, etc.). Sua
+base de desenvolvimento foi feita pensando na interação entre empresa x cliente, fazendo
+com que o cliente seja mais relevante com o estabelecimento em que ele está comprando,
+deixando assim ele, o cliente, mais satisfeito e o estabelecimento fidelizando este mesmo. Não
+somente sendo relevante, mas também agilizando e facilitando o consumo do produto
+desejado.
 ## Installation
 ### Clone this repository
 ```
